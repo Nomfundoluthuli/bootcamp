@@ -5,7 +5,7 @@ let school ={
     learners: 100,
 ///Create a function that fetches school properties and attributes
     displayinfo: function(){
-        console.log(`The name of the school is ${school.name}' \n located at 
+        console.log(`The name of the school is ${school.location}' \n located at 
         ${school.located} established at ${school.established} `);
    
     },// End of function displayinfo
@@ -15,12 +15,16 @@ let school ={
     hardData: function() {
          console.log("The name school is " + school.name + "\n"
           + "located at" + school.location)
-    }
+    },
 
     //
-    notationData:Function
-        console.log('The name of the school' + school['name']) + 
+    notationData: function(){
 
+        console.log('The name of the school' + school['name']
+        + "loctated at " + school['location']
+        
+        ) 
+    }
 }// End of object 
 
 school.displayinfo() 
